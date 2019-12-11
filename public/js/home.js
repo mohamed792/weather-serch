@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit',(e)=>{
     mesg1.textContent  = "Loading ....";
     mesg2.textContent  = "";
 
-    fetch(`./weather?address=${address}`).then((respons)=>{
+    fetch(`/weather?address=${address}`).then((respons)=>{
         if (respons.status !==200 || respons.error){
             mesg1.textContent = respons.error;
             return;

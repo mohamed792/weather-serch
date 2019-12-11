@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const hdbs = require('hbs');
+const port = process.env.PORT || 4440;
 const getGeoCode = require('./weather/geoCode');
 const getWeather = require('./weather/weatherForecast');
 
@@ -67,22 +68,11 @@ app.get('/weather',(req,res)=>{
 
 
 
-
-//
-// app.get('/about',(req,res)=>{
-//     let args = "about";
-//     res.render('about',{'title':args});
-// });
-//
-// app.get('/docs',(req,res)=>{
-//     let args = "documentation";
-//     res.render('docs',{'title':args});
-// });
-
 // handling unfounded pages
 app.get('*',(req,res)=>{
     res.render('404');
 });
-app.listen('4444',()=>{
+
+app.listen(port,()=>{
     console.log("server is listening on port 4444");
 });
