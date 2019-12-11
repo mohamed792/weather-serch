@@ -1,0 +1,53 @@
+h1{
+    color: gray;
+    text-align: center;
+    padding-top: 40px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.main-nav{
+    width: 100%;
+    display: flex;
+    flex-flow: row ;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0px;
+
+}
+.logo{
+  color: coral;
+    font-size: x-large;
+    display: inline-block;
+
+
+}
+.logo .logo-w{
+    font-size: xx-large;
+    color: chocolate;
+}
+.main-nav ul a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    padding: 5px;
+    color:gray;
+    margin-left: 20px;
+}
+.main-nav ul a:hover{
+    color:black;
+    transition-duration: 0.5s;
+}
+.main-nav ul{
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+}
+
