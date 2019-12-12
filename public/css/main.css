@@ -1,27 +1,35 @@
-h1{
+h1 {
     color: gray;
     text-align: center;
     padding-top: 40px;
 }
 
-*{
+input {
+    background-color: white;
+}
+
+
+* {
     padding: 0px;
     margin: 0px;
 }
-.container{
+
+.container {
     width: 90%;
     margin: auto;
 }
-.main-nav{
+
+.main-nav {
     width: 100%;
     border-bottom: 1px solid lightgray;
     box-shadow: 0px 0px 5px 0px gray;
 
 }
-.nav-items{
+
+.nav-items {
 
     display: flex;
-    flex-flow: row ;
+    flex-flow: row;
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
@@ -29,38 +37,51 @@ h1{
 
 
 }
-.logo{
-  color: coral;
+
+.logo {
+    color: coral;
     font-size: x-large;
     display: inline-block;
 
 
 }
-.logo .logo-w{
+
+.logo a {
+    text-decoration: none;
+    color: coral;
+
+
+}
+
+.logo .logo-w {
     font-size: xx-large;
     color: chocolate;
 }
-.main-nav ul a ,.footer-sections .footer-nav ul a{
+
+.main-nav ul a, .footer-sections .footer-nav ul a {
     text-decoration: none;
     font-weight: bold;
     font-size: larger;
     padding: 5px;
-    color:gray;
+    color: gray;
     margin-left: 20px;
 }
-.main-nav ul a:hover{
-    color:black;
+
+.main-nav ul a:hover {
+    color: black;
     transition-duration: 0.5s;
 }
-.main-nav ul{
+
+.main-nav ul {
     list-style: none;
     display: inline-flex;
     flex-direction: row;
 }
 
-.section-search .search-form-wraper{
-    padding-top:30px;
+.section-search .search-form-wraper {
+    padding-top: 30px;
 }
+
 .section-search .search-form {
 
     display: flex;
@@ -68,24 +89,33 @@ h1{
     justify-content: center;
 
 }
-.section-search .search-form .btnsubmit{
+
+.section-search .search-form .btnsubmit {
     width: 20%;
-    height:50px ;
-    background-color: lightgray;
+    height: 50px;
     font-size: 25px;
     border: none;
-    color: white;
     cursor: pointer;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+    background: #ff6300;
+    -webkit-transition: 0.2s all;
+
 }
-.section-search .search-form .btnsubmit:hover{
-    background-color: darkgray;
-}
-.section-search .search-form .address{
+
+.section-search .search-form .btnsubmit:hover {
+    color: #ff6300;
+    background: #211b19;}
+
+.section-search .search-form .address {
     width: 50%;
-    height:49px;
-    padding-left:10px ;
+    height: 49px;
+    padding-left: 10px;
     border: 1px solid lightgray;
     border-right: 0px;
     font-size: 20px;
@@ -93,27 +123,37 @@ h1{
     border-top-left-radius: 5px;
 
 }
-.mesg1,.mesg3,.errmesg{
+
+.mesg1, .mesg3, .errmesg {
     text-align: center;
     color: darkgray;
     font-size: larger;
     display: none;
 }
-.errmesg{padding-top: 100px;color: red; font-size: xx-large;}
-.mesg2{
+
+.errmesg {
+    padding-top: 100px;
+    color: red;
+    font-size: xx-large;
+}
+
+.mesg2 {
     margin-top: 100px;
     display: flex;
     justify-content: center;
 }
-.mesg3 td{
+
+.mesg3 td {
     text-align: left;
     padding: 11px;
 
 }
-.mesg3 td{
+
+.mesg3 td {
     padding-left: 11px;
 }
-.main-footer{
+
+.main-footer {
     width: 100%;
     border-top: 1px solid lightgray;
     border-bottom: 0px;
@@ -122,16 +162,54 @@ h1{
     bottom: 0px;
 
 }
-.footer-sections{
+
+.footer-sections {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.footer-sections .copyright
-{
+.footer-sections .copyright {
     text-align: center;
     padding: 40px;
 
+}
+
+.about-title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: xx-large;
+    color: dimgray;
+    margin-top: 200px;
+    transition: 0.1s all;
+
+}
+.about-link{
+  text-align: center;
+}
+.about-link a{
+    border-radius: 7px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 23px;
+    background: #ff6300;
+    font-size: x-large;
+    width: 20%;
+    -webkit-transition: 0.2s all;
+    transition: 0.4s all;
+}
+
+.about-link a:hover{
+    color: #ff6300;
+    background: #211b19;
+}
+.about-logo{
+    font-size: xx-large;
 }
