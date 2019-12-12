@@ -8,7 +8,7 @@ weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault();
     let address = document.querySelector('.address').value;
     mesg1.style.display = 'block';
-    mesg3.style.display  = "none";
+    mesg3.textContent  = "";
 
     fetch(`/weather?address=${address}`).then((respons)=>{
         if (respons.status !==200 || respons.error){
