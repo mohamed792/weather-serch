@@ -93,12 +93,13 @@ h1{
     border-top-left-radius: 5px;
 
 }
-.mesg1,.mesg3{
+.mesg1,.mesg3,.errmesg{
     text-align: center;
     color: darkgray;
     font-size: larger;
     display: none;
 }
+.errmesg{padding-top: 100px;color: red; font-size: xx-large;}
 .mesg2{
     margin-top: 100px;
     display: flex;
